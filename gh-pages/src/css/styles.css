@@ -1,0 +1,806 @@
+/*importing google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Open+Sans:wght@300;400;600");
+
+/*reset*/
+/*mostly done by normalize.css*/
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.col-4,
+.col-12,
+.col-6 {
+  padding: 0%;
+}
+.onepage-pagination li a:before {
+  background: white;
+}
+.onepage-pagination li a.active:before {
+  border: 1px solid white;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/*default fonts*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Archivo", sans-serif;
+  color: white;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1.25vw;
+  font-weight: 600;
+}
+
+form {
+  overflow-y: hidden;
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+/*custom*/
+/*mostly elements that are used again and again*/
+.button-main {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 2em;
+  font-size: 1.25vw;
+  font-weight: 600;
+  padding: 7px 10px;
+}
+.dark_button {
+  border: 2px solid black;
+}
+.carousel-indicators {
+  display: none;
+}
+h1 {
+  font-size: 6vw;
+  font-weight: 600;
+  line-height: 1.2;
+}
+/*main stylesheet*/
+
+#main {
+  background-image: url("../images/background_main.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+#logo_ecell {
+  width: 15%;
+  height: auto;
+}
+
+#recruitments {
+  margin: 3% 0 1% 0;
+}
+
+nav > img {
+  margin: 1% 2% 0 0;
+  width: 3vw;
+  height: auto;
+}
+
+#social img {
+  width: 40%;
+  height: auto;
+  position: relative;
+  top: 65vh;
+  margin: 5% 0 0 0;
+  display: block;
+}
+
+#menu {
+  background-color: black;
+  margin-right: 4%;
+  cursor: pointer;
+}
+#header_main {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+}
+#header img {
+  display: inline;
+}
+#nav-logo {
+  width: 55%;
+  height: auto;
+}
+
+.sidenav {
+  display: none;
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #012044; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2em; /* Place content 4em from the top */
+  transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-size: 1.5vw;
+  color: lightblue;
+  display: block;
+  transition: 0.3s;
+  font-weight: 400;
+  margin-left: 10%;
+  text-decoration: none;
+  line-height: 2;
+  z-index: 100;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+  z-index: 100;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: -0.01em;
+  right: 0.2em;
+  font-size: 3.5em;
+}
+
+#sidenav-name {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  position: relative;
+  left: -30%;
+}
+
+.sidenav img {
+  width: 15%;
+  height: 100%;
+  position: relative;
+}
+/*CSS for about*/
+#about {
+  background-image: url("../images/background_about.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+#about h1 {
+  margin: 4% auto;
+}
+#about p {
+  margin: 2% auto;
+}
+#about .text-center p {
+  width: 50%;
+}
+/*CSS for SIP*/
+#sip {
+  background-image: url("../images/background_sip.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+#sip h1,
+p {
+  margin: 4% auto;
+}
+
+#sip .text-center p {
+  width: 50%;
+}
+
+/*CSS for courses*/
+#courses {
+  background-image: url("../images/background_courses.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+#courses h1,
+#courses p {
+  margin: 4% auto;
+}
+
+#courses .text-center p {
+  width: 50%;
+}
+#events {
+  overflow-x: hidden;
+}
+.events_1 {
+  background-image: url("../images/background_events_1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+.events_2 {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+.events_3 {
+  background-image: url("../images/background_events_3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+#events .carousel-caption {
+  margin-bottom: 20%;
+}
+#team {
+  background-image: url("../images/background_team.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+/*CSS for footer*/
+#footer {
+  background-color: #111111;
+  height: 50vh;
+  display: grid;
+  grid-template-areas:
+    "footer-item1 footer-item3 footer-item4"
+    "footer-item2 footer-item3 footer-item4"
+    "footer-item5 footer-item5 footer-item5";
+}
+
+#footer-item1 {
+  grid-area: footer-item1;
+  display: grid;
+  grid-template-areas: "footer-item1-1 footer-item1-2 footer-item1-3";
+  padding: 7% 0 0 5%;
+}
+#footer-item1 h3 {
+  font-weight: 700;
+}
+#footer-item1-1 {
+  grid-area: footer-item1-1;
+}
+#footer-item1-2 {
+  grid-area: footer-item1-2;
+}
+#footer-item1-2 .d-none p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#footer-item1-3 {
+  grid-area: footer-item1-3;
+}
+
+#footer-item2 {
+  grid-area: footer-item2;
+  padding: 2% 0 0 5%;
+}
+#footer-item2 img {
+  width: 4%;
+  height: auto;
+}
+#footer-item3 {
+  grid-area: footer-item3;
+  padding: 9% 0 0 15%;
+}
+#footer-item3 input[type="text"] {
+  background-color: lightgray;
+  color: black;
+  border: none;
+}
+#submit {
+  position: relative;
+  top: 7px;
+  right: 4px;
+}
+#footer-item3 input[type="text"]:active {
+  border: none;
+}
+#footer-item4 {
+  grid-area: footer-item4;
+}
+#footer-item4 img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: -25%;
+}
+#footer-item4 > h3 {
+  position: relative;
+  left: -20%;
+}
+#footer-item5 {
+  grid-area: footer-item5;
+  height: fit-content;
+}
+/*main page css done*/
+/*other pages*/
+/*recruitment page*/
+#recruitments_main {
+  background-image: url("../images/background_recruitments_main.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+.recruitments_button {
+  border: 2px solid black;
+}
+#recruitments_description img {
+  width: 10vw;
+}
+#team_main {
+  background-image: url("../images/background_team_main.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#team_description {
+  background-image: url("../images/background_team.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#team a img,
+#team_description a img {
+  width: 2vw;
+}
+#team_name {
+  margin: 0% 0 15% 0;
+}
+.sip_main {
+  background-image: url("../images/background_sip_main.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+  overflow-y: hidden;
+}
+.sip_main #header {
+  margin-left: 1%;
+}
+.sip_main p {
+  margin: 2% auto;
+}
+.sip_main .text-center p,
+#blog p,
+.card-text,
+#podcast_main p,
+#courses_main .text-center p,
+#course_1_main .text-center p {
+  width: 70%;
+}
+/*Css for Blogs*/
+#blog {
+  background-image: url("../images/background_blogs.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#blog_description {
+  background-color: #eeeeee;
+  height: 100%;
+}
+#blog_description .card {
+  margin: 0 5% 10% 5%;
+}
+#blog_description .card p,
+#courses_description .card p {
+  font-weight: 400;
+  font-size: 1vw;
+}
+.card-title {
+  margin-top: 5%;
+}
+#podcast_main {
+  background-image: url("../images/background_podcast.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#course_1_main {
+  background-image: url("../images/background_courses.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#courses_main {
+  background-image: url("../images/background_courses.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#courses_main .col-12,
+#blog .col-12 {
+  padding: 15px;
+}
+.card-title,
+.card-text {
+  color: black;
+}
+#course_1_description {
+  background-color: #eeeeee;
+}
+#course_container {
+  display: grid;
+  grid-template-areas:
+    "c1 c2"
+    "c4 c3"
+    "c5 c6";
+}
+#c1 {
+  grid-area: c1;
+}
+#c2 {
+  grid-area: c2;
+}
+#c3 {
+  grid-area: c3;
+}
+#c4 {
+  grid-area: c4;
+}
+#c5 {
+  grid-area: c5;
+}
+#c6 {
+  grid-area: c6;
+}
+@media only screen and (max-width: 575px) {
+  * {
+    overflow-x: hidden;
+  }
+  .text-center-mobile {
+    text-align: center;
+  }
+  #main {
+    background-image: url("../images/background_main_mob.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+  }
+  .button-main {
+    border: 2px solid white;
+    border-radius: 3em;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: 7px 10px;
+  }
+  .col-1 {
+    padding: 0%;
+  }
+  h1 {
+    font-size: 8.5vw;
+    font-weight: 700;
+    line-height: 0.9;
+  }
+
+  h2 {
+    font-size: 6.5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  h4 {
+    font-size: 3vw;
+  }
+  p {
+    font-weight: 400;
+    font-size: 4vw;
+  }
+  a {
+    font-size: 4vw;
+  }
+
+  #main {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #main > .col-sm-10 {
+    position: relative;
+    top: -15%;
+  }
+  #main > .col-sm-10 > div > div {
+    margin: 3% auto;
+  }
+  #logo_ecell {
+    width: 40%;
+    height: auto;
+  }
+  #menu {
+    background-color: black;
+    width: 10vw;
+    height: auto;
+    margin: 1% 0% 0 0;
+  }
+  #social img {
+    width: 80%;
+    padding: 0%;
+    top: 50vh;
+  }
+  #nav-logo {
+    width: 25%;
+    height: auto;
+  }
+
+  .sidenav {
+    padding-top: 1em;
+  }
+  .sidenav a {
+    font-size: 5vw;
+  }
+  .sidenav .closebtn {
+    top: -0.2em;
+    font-size: 3em;
+  }
+
+  .sidenav img {
+    width: 15%;
+  }
+  #about .text-center h1 {
+    margin: 10% 0 0 0;
+    font-size: 8vw;
+  }
+  #about .text-center p {
+    width: 80%;
+    font-size: 4vw;
+    margin: 8% auto;
+  }
+  #about .carousel-item p {
+    font-size: 3.5vw;
+    width: 80%;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  #sip h1,
+  #sip p {
+    margin: 10% auto;
+  }
+
+  #sip .text-center p {
+    width: 80%;
+  }
+
+  #courses .text-center p {
+    width: 80%;
+  }
+  .carousel-caption {
+    margin-bottom: 65%;
+  }
+  #team {
+    height: auto;
+  }
+  #team a img,
+  #team_description a img {
+    width: 7vw;
+  }
+  #footer {
+    background-color: #111111;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "footer-item4"
+      "footer-item3"
+      "footer-item2"
+      "footer-item1"
+      "footer-item5";
+  }
+
+  #footer-item1 {
+    grid-area: footer-item1;
+  }
+  #footer-item1 .col-4 {
+    padding: 0;
+  }
+  #footer-item2 {
+    grid-area: footer-item2;
+    padding: 0%;
+  }
+  #footer-item2 img {
+    width: 10%;
+    height: auto;
+  }
+  #footer-item3 {
+    grid-area: footer-item3;
+    padding: 0;
+  }
+  #footer-item3 input[type="text"] {
+    background-color: lightgray;
+    color: black;
+    border: none;
+  }
+  #submit {
+    position: relative;
+    top: 7px;
+    right: 4px;
+  }
+  #footer-item3 input[type="text"]:active {
+    border: none;
+  }
+  #footer-item4 {
+    grid-area: footer-item4;
+  }
+  #footer-item4 img {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  #footer-item4 > h3 {
+    position: relative;
+    left: 0;
+  }
+  #footer-item5 {
+    grid-area: footer-item5;
+    height: fit-content;
+  }
+  /*other pages*/
+  #recruitments_description img {
+    width: 40vw;
+  }
+  .dark_button {
+    border: 2px solid black;
+  }
+  #recruitments_description p {
+    width: 80%;
+  }
+  #blog,
+  #podcast_main,
+  .sip_main,
+  #sip,
+  #courses,
+  #team,
+  #events-mob {
+    height: 100%;
+  }
+
+  #events-mob h1,
+  #events-mob p {
+    margin: 5% auto;
+  }
+  .sip_main #header {
+    margin-left: 3.5%;
+  }
+  .sip_main .text-center h1 {
+    width: 80%;
+  }
+  #course_container {
+    display: grid;
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6";
+  }
+  #c1 {
+    grid-area: c1;
+  }
+  #c2 {
+    grid-area: c2;
+  }
+  #c3 {
+    grid-area: c3;
+  }
+  #c4 {
+    grid-area: c4;
+  }
+  #c5 {
+    grid-area: c5;
+  }
+  #c6 {
+    grid-area: c6;
+  }
+}
+
+@media only screen and (max-height: 575px) {
+  #main {
+    background-image: url("../images/background_main.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
+  }
+  #about {
+    background-image: url("../images/background_about.jpg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
+  }
+  .events_1 {
+    background-image: url("../images/background_events_1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 120vh;
+  }
+  .events_2 {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 120vh;
+  }
+
+  .events_3 {
+    background-image: url("../images/background_events_3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 120vh;
+  }
+  #team {
+    background-image: url("../images/background_team.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
+  }
+}
