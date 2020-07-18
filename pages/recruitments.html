@@ -17,7 +17,7 @@
     </script>
 
     <!--title & description-->
-    <title>E-Cell NITK | Courses</title>
+    <title>E-Cell | Recruitments</title>
     <meta name="description" content="" />
     <link
       rel="icon"
@@ -43,7 +43,10 @@
       crossorigin="anonymous"
     />
     <!--replace this with hover-min.css before deployment-->
-    <link rel="stylesheet" href="./src/css/hover.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
     <link rel="stylesheet" href="./src/css/styles.css" />
     <script
@@ -52,18 +55,14 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <!--main-->
-    <section id="courses_main" class="container-fluid">
+    <section id="recruitments_main" class="container-fluid">
       <div class="row">
         <header class="col-12">
           <!--navigation-->
-          <nav id="header" class="text-right navbar">
+          <nav id="header" class="text-right">
             <!--hamburger menu icon-->
-            <a href="/" class="text-left"
-              ><img id="nav-logo" src="./src/images/logo_ecell.svg" alt=""
-            /></a>
             <img
               id="menu"
               onclick="openNav()"
@@ -79,23 +78,25 @@
                 onclick="closeNav()"
                 id="sidenav-name"
                 class="hvr-grow"
-                href="./index.html"
+                href="#"
                 >E-CELL NITK</a
               >
-              <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./index.html#about"
                 >About</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
-                href="./startup-internship-drive.html"
+                href="./startup-internship-application.html"
                 >SIP-2020</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
-                target="_blank"
-                href="./courses.html"
+                href="./index.html#courses"
                 >Courses</a
               >
               <a
@@ -113,7 +114,7 @@
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow d-none d-sm-block"
-                href="./index.html#events"
+                href="#events"
                 >Events</a
               >
               <a
@@ -165,103 +166,71 @@
           </nav>
         </header>
         <!--first section-->
-        <div class="text-center col-12">
-          <h1>
-            COURSES
-          </h1>
+        <div class="col-12 text-center">
+          <h1 id="recruitments_name">Recruitments 2020-21</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est magnam
-            saepe repellat minus totam tempore ipsam nam magni officiis deserunt
-            facere iure eos, omnis facilis ducimus aliquid eius accusamus id
-            maiores nobis. Beatae architecto cumque necessitatibus quidem dolor
-            dicta eius.
+            Some text on what teams are, responsibilities and all. <br />
+            Explain the process of recruitments too.
           </p>
         </div>
-        <div id="courses_description" class="col-12 container-fluid mb-5">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card text-center">
-                <img
-                  src="./src/images/background_team.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">FINANCE</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="./course_template.html" class="btn btn-dark"
-                    >Go somewhere</a
-                  >
-                </div>
-              </div>
+      </div>
+    </section>
+    <!--scripts-->
+    <!--next sections-->
+    <div class="col-12">
+      <div class="row" id="recruitments_description">
+        <div class="col-12 col-sm-6">
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <img src="./src/images/logo_rec.svg" alt="" />
+              <h3 class="text-dark">
+                Executive <br />
+                Team
+              </h3>
+              <p class="text-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                reprehenderit totam, quas corrupti illo ad id vel, commodi
+                perferendis accusamus explicabo repudiandae soluta dolores quos
+                hic perspiciatis saepe architecto quis impedit aut quia nisi
+                cumque labore possimus. Saepe, neque atque?
+              </p>
+              <a class="col-12 text-center" href="">
+                <button
+                  class="button-main dark_button mb-5 my-sm-5 hvr-grow text-dark"
+                >
+                  APPLY NOW
+                </button>
+              </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card text-center">
-                <img
-                  src="./src/images/background_team.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">ENTREPRENEURSHIP</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="./course_template.html" class="btn btn-dark"
-                    >Go somewhere</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card text-center">
-                <img
-                  src="./src/images/background_team.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">CRYPTOCURRENCY</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="./cryptocurrency.html" class="btn btn-dark"
-                    >Go somewhere</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="card text-center">
-                <img
-                  src="./src/images/background_team.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="./course_template.html" class="btn btn-dark"
-                    >Go somewhere</a
-                  >
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <img src="./src/images/logo_rec.svg" alt="" />
+              <h3 class="text-dark">
+                Content <br />
+                Team
+              </h3>
+              <p class="text-dark">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos ea magni aut est error debitis fuga ratione. Natus
+                consequatur voluptas necessitatibus fugit molestiae sapiente
+                asperiores voluptates exercitationem eveniet quia? Corporis
+                molestiae totam sunt. Id qui dolores hic dolorem fuga dolor!
+              </p>
+              <a class="col-12 text-center" href="">
+                <button
+                  class="button-main dark_button mb-5 my-sm-5 hvr-grow text-dark"
+                >
+                  APPLY NOW
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!--next sections-->
-    <section></section>
+    </div>
     <section class="col-12">
       <!--footer-->
       <footer id="footer">
@@ -275,18 +244,15 @@
               <p>About Us</p>
             </a>
             <a href="./blog.html">
-              <p>Blog</p>
+              <p>Blogs</p>
             </a>
           </div>
           <div id="footer-item1-2">
-            <h3>DISCOVER</h3>
-            <a href="./podcasts.html">
-              <p>Podcasts</p>
-            </a>
+            <h3>EXPLORE</h3>
             <a class="d-none d-sm-block" href="./index.html#events">
               <p>Events</p>
             </a>
-            <a class="d-sm-none" href="./index.html#events-mob">
+            <a class="d-sm-none" href="#events-mob">
               <p>Events</p>
             </a>
             <a href="./team.html">
@@ -295,7 +261,7 @@
           </div>
           <div id="footer-item1-3">
             <h3>INITIATIVES</h3>
-            <a href="./startup-internship-drive.html">
+            <a href="./startup-internship-application.html">
               <p>SIP</p>
             </a>
             <a href="./index.html#courses">
@@ -351,9 +317,7 @@
           </form>
         </div>
         <div id="footer-item4" class="text-center mt-5">
-          <a href="./index.html"
-            ><img src="./src/images/logo_ecell.svg" alt=""
-          /></a>
+          <a href="#"><img src="./src/images/logo_ecell.svg" alt="" /></a>
           <h3>E-CELL NITK</h3>
         </div>
         <div id="footer-item5" class="text-center">
@@ -361,7 +325,6 @@
         </div>
       </footer>
     </section>
-    <!--scripts-->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
