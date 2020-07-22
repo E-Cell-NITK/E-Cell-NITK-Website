@@ -17,7 +17,7 @@
     </script>
 
     <!--title & description-->
-    <title>E-Cell NITK | Blogs</title>
+    <title>E-Cell NITK | Podcasts</title>
     <meta name="description" content="" />
     <link
       rel="icon"
@@ -42,6 +42,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!--replace this with hover-min.css before deployment-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
@@ -57,7 +58,7 @@
 
   <body>
     <!--main-->
-    <section id="blog" class="container-fluid">
+    <section id="podcast_main" class="container-fluid">
       <div class="row">
         <header class="col-12">
           <!--navigation-->
@@ -87,7 +88,6 @@
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
-                tartget="_blank"
                 href="./index.html#about"
                 >About</a
               >
@@ -101,7 +101,6 @@
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
-                tartget="_blank"
                 target="_blank"
                 href="./courses.html"
                 >Courses</a
@@ -116,7 +115,7 @@
                 onclick="closeNav()"
                 class="text-left hvr-grow"
                 href="./podcasts.html"
-                >Podcasts</a
+                >Podcast</a
               >
               <a
                 onclick="closeNav()"
@@ -173,225 +172,132 @@
           </nav>
         </header>
         <!--first section-->
-        <div class="col-12 text-center">
-          <h1>
-            BLOGS
-          </h1>
+        <div id="" class="col-12 text-center my-5">
+          <h1>PODCASTS</h1>
+          <p>
+            E-Cell NITK presents our official podcast - The Building Blocks of
+            Business - where we bring you the best that business and
+            entrepreneurship has to offer. So what are you waiting for? Grab
+            your earphones to listen to some inspiring journeys and sneak a peek
+            at what lies ahead after graduation!
+          </p>
+          <iframe
+            src="https://open.spotify.com/embed-podcast/show/4RATgTeZxdivKXPgOtVsc4"
+            width="70%"
+            height="232"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
         </div>
-        <!--Carousel-->
-        <div class="col-1"></div>
-        <div
-          id="carouselExample"
-          class="carousel slide col-10 mb-5"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="https://pulsenitk.in/wp-content/uploads/2020/04/aa-1.png"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body" style="background-color: white;">
-                      <h5 class="card-title">
-                        An Overview of the Entrepreneurship Cell
-                      </h5>
-                      <p class="card-text">
-                        "Entrepreneurship isn’t just a label, it’s a lifestyle"
-                        – Richard Branson, Founder, Virgin Group
-                      </p>
-                      <a
-                        href="https://pulsenitk.in/2020/04/28/a-glimpse-of-entrepreneurship-cell/"
-                        target="_blank"
-                        ><button
-                          class="button-main text-dark my-sm-3 hvr-grow"
-                          style="border: 2px solid black;"
-                        >
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--
-            <div class="carousel-item">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="./src/images/extra.jpeg"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blog title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <button class="button-main my-sm-3 hvr-grow">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="./src/images/extra.jpeg"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blog title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <button class="button-main my-sm-3 hvr-grow">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="./src/images/extra.jpeg"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blog title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <button class="button-main my-sm-3 hvr-grow">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExample"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExample"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="col-1"></div>
       </div>
     </section>
-    <!--scripts-->
+
     <!--next sections-->
-    <section id="blog_description" class="container-fluid pt-5">
+    <section class="container-fluid" style="background-color: #eeeeee;">
       <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3 text-center">
-          <div class="card text-center">
-            <img
-              src="https://pulsenitk.in/wp-content/uploads/2020/04/aa-1.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title text-dark">
-                An Overview of the Entrepreneurship Cell
-              </h5>
-              <p class="card-text text-dark">
-                "Entrepreneurship isn’t just a label, it’s a lifestyle" –
-                Richard Branson, Founder, Virgin Group
-              </p>
-              <a
-                href="https://pulsenitk.in/2020/04/28/a-glimpse-of-entrepreneurship-cell/"
-                target="_blank"
-                class="btn btn-primary"
-                >Read More</a
-              >
+        <div class="col-12">
+          <div class="card my-3 mx-5">
+            <div class="row">
+              <div class="col-md-4 pt-sm-5">
+                <img
+                  src="./src/images/podcast_images/image_podcast_1.jpeg"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-dark">Exploring ISB YLP</h5>
+                  <p class="card-text text-dark">
+                    Join us for our first episode with Mr. Achuth Arun, NITK
+                    Alumnus, as he shares strategies and tips on cracking the
+                    ISB Young Leadership Programme while also talking about his
+                    own journey and experiences with the YLP.
+                  </p>
+                  <iframe
+                    src="https://open.spotify.com/embed-podcast/episode/0qN2ngeeiVmq6aytqllFCB"
+                    width="100%"
+                    height="232"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                  ></iframe>
+                  <div>
+                    <a href="spotify:episode:0qN2ngeeiVmq6aytqllFCB">
+                      <img src="./src/images/logo_spotify.svg" alt="" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UC2q18pRs7UwoLmmJMRTT-dQ"
+                    >
+                      <img src="./src/images/logo_youtube.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!--
-        <div class="col-12 col-sm-6 col-lg-3 text-center">
-          <div class="card text-center">
-            <img src="./src/images/extra.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title text-dark">Card title</h5>
-              <p class="card-text text-dark">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <!--
+          <div class="card my-3 mx-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./src/images/extra.jpeg" class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-dark">Card title</h5>
+                  <p class="card-text text-dark">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <iframe
+                    src="https://open.spotify.com/embed/track/5FVd6KXrgO9B3JPmC8OPst"
+                    width="100%"
+                    height="25%"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                  ></iframe>
+                  <div>
+                    <img src="./src/images/logo_spotify.svg" alt="" />
+                    <img src="./src/images/logo_youtube.svg" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 text-center">
-          <div class="card text-center">
-            <img src="./src/images/extra.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title text-dark">Card title</h5>
-              <p class="card-text text-dark">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card my-3 mx-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./src/images/extra.jpeg" class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-dark">Card title</h5>
+                  <p class="card-text text-dark">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <iframe
+                    src="https://open.spotify.com/embed/track/5FVd6KXrgO9B3JPmC8OPst"
+                    width="100%"
+                    height="25%"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                  ></iframe>
+                  <div>
+                    <img src="./src/images/logo_spotify.svg" alt="" />
+                    <img src="./src/images/logo_youtube.svg" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          -->
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 text-center">
-          <div class="card text-center">
-            <img src="./src/images/extra.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title text-dark">Card title</h5>
-              <p class="card-text text-dark">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        -->
       </div>
     </section>
     <section class="col-12">
@@ -501,6 +407,7 @@
         </div>
       </footer>
     </section>
+    <!--scripts-->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
