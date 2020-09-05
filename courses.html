@@ -17,7 +17,7 @@
     </script>
 
     <!--title & description-->
-    <title>E-Cell | SIP Students</title>
+    <title>E-Cell NITK | Learning Portal</title>
     <meta name="description" content="" />
     <link
       rel="icon"
@@ -54,12 +54,11 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
   </head>
 
   <body>
     <!--main-->
-    <section class="sip_main" class="container-fluid">
+    <section id="courses_main" class="container-fluid">
       <div class="row">
         <header class="col-12">
           <!--navigation-->
@@ -86,17 +85,14 @@
                 href="./index.html"
                 >E-CELL NITK</a
               >
-              <a
-                onclick="closeNav()"
-                class="text-left hvr-grow"
-                href="./index.html#about"
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
                 >About</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
                 href="./startup-internship-drive.html"
-                >SIP 2020</a
+                >SIP-2020</a
               >
               <a
                 onclick="closeNav()"
@@ -172,53 +168,83 @@
           </nav>
         </header>
         <!--first section-->
-        <div id="" class="text-center mb-5">
-          <h1 class="container-fluid">STARTUP INTERNSHIP <br />PROGRAM</h1>
+        <div class="text-center col-12">
+          <h1>LEARNING PORTAL</h1>
+          <p>
+            E-Cell NITK believes that constant learning is the key to
+            entrepreneurial success. To help kickstart this process, we present
+            our own specially made course pathways for beginners, that cover a
+            diversified range of subjects. These self-paced pathways are
+            designed to orient students towards entrepreneurship and strengthen
+            their business acumen and decision making while also catering to the
+            interests of all the business enthusiasts out there
+          </p>
+        </div>
+        <div id="courses_description" class="col-12 container-fluid mb-5">
           <div class="row">
-            <div class="col-12">
-              <h2>
-                For Students
-              </h2>
-              <p>
-                The Startup Internship Program is conceptualized exclusively for
-                the students of NITK who are captivated, committed and
-                inquisitive to know more about the startup community and aim at
-                starting their own venture or comprehend about pursuing a career
-                in the startup space in the future.
-              </p>
-              <p class="text-left">
-                Instructions for Applying through SIP<br />1. Click on your
-                desired startup below to know more. <br />2. Click on “Apply
-                Now” to fill the form. <br />
-                3. Use your nitk.edu account to fill the form. <br />
-                4. You can apply for multiply startups/roles. <br />
-                5. SIP is open for all years to apply!
-              </p>
-              <h6>Registrations Closed</h6>
-              <a href="#sip-drive">
-                <img src="./src/images/icon_arrow.svg" alt="" />
-              </a>
-              <p>
-                If you're a startup,
-                <a href="./startup-internship-application.html">click here.</a>
-              </p>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card text-center">
+                <img
+                  src="./src/images/entreprenurship/cover.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 200px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ENTREPRENEURSHIP-I</h5>
+                  <p class="card-text">
+                    Learn the necessary skills to boost your startup idea!
+                  </p>
+                  <a href="./entrepreneurship.html" class="btn btn-dark"
+                    >EXPLORE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card text-center">
+                <img
+                  src="./src/images/finance/cover.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 200px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">FINANCE</h5>
+                  <p class="card-text">
+                    Dive deeper and explore the world of Finance!
+                  </p>
+                  <a href="./finance.html" class="btn btn-dark">EXPLORE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card text-center">
+                <img
+                  src="./src/images/crypto/cover.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 200px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CRYPTOCURRENCY</h5>
+                  <p class="card-text">
+                    Study about the applications of this new technology!
+                  </p>
+                  <a href="./cryptocurrency.html" class="btn btn-dark"
+                    >EXPLORE</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!--next sections-->
-    <section id="sip-drive">
-      <iframe
-        class="airtable-embed"
-        src="https://airtable.com/embed/shrBegO4hh7crU4Wr?backgroundColor=blue&layout=card"
-        frameborder="0"
-        onmousewheel=""
-        width="100%"
-        height="533"
-        style="background: transparent; border: 1px solid #ccc;"
-      ></iframe>
-    </section>
+    <section></section>
     <section class="col-12">
       <!--footer-->
       <footer id="footer">
@@ -237,7 +263,7 @@
           </div>
           <div id="footer-item1-2">
             <h3>DISCOVER</h3>
-            <a href="./podcast.html">
+            <a href="./podcasts.html">
               <p>Podcasts</p>
             </a>
             <a class="d-none d-sm-block" href="./index.html#events">
